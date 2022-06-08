@@ -1,7 +1,7 @@
 # 💻 RESTful API
 
 - Rest?
-  ![ajax동작방식](https://velog.velcdn.com/images/cloud_oort/post/ef78f17f-bbf1-4604-b018-eef32c70190b/image.png)
+  ![restful동작방식](https://velog.velcdn.com/images/cloud_oort/post/ef78f17f-bbf1-4604-b018-eef32c70190b/image.png)
   </br>
   1. HTTP URL(Uniform Resource Identifier)를 통해 자원(Resource)을 명시하고,
   2. HTTP Method(POST, GET, PUT, DELETE)를 통해
@@ -71,15 +71,16 @@ Delete : 데이터 삭제 (DELETE)
 
 ### REST API 설계 예시
 
-</br>
-###### URI는 동사보다는 명사를, 대문자보다는 소문자를 사용하여야 한다.
+###### 1. URI는 동사보다는 명사를, 대문자보다는 소문자를 사용하여야 한다.
+
 ```js
 Bad Example http://khj93.com/Running/
-Good Example  http://khj93.com/run/  
+Good Example  http://khj93.com/run/
 ```
+
 </br>
 
-###### 마지막에 슬래시 (/)를 포함하지 않는다.
+###### 2. 마지막에 슬래시 (/)를 포함하지 않는다.
 
 ```js
 Bad Example http://khj93.com/test/
@@ -88,7 +89,7 @@ Good Example  http://khj93.com/test
 
 </br>
 
-###### 언더바 대신 하이폰을 사용한다.
+###### 3. 언더바 대신 하이폰을 사용한다.
 
 ```js
 Bad Example http://khj93.com/test_blog
@@ -97,7 +98,7 @@ Good Example  http://khj93.com/test-blog
 
 </br>
 
-###### 파일확장자는 URI에 포함하지 않는다.
+###### 4. 파일확장자는 URI에 포함하지 않는다.
 
 ```js
 Bad Example http://khj93.com/photo.jpg
@@ -106,7 +107,7 @@ Good Example  http://khj93.com/photo
 
 </br>
 
-###### 행위를 포함하지 않는다.
+###### 5. 행위를 포함하지 않는다.
 
 ```js
 Bad Example http://khj93.com/delete-post/1
